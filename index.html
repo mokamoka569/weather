@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- bootstrap css -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawsome -->
+     <link rel="stylesheet" href="css/all.min.css">
+    <!-- css style -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-red  py-3 ">
+        <div class="container">
+          <a class="navbar-brand d-flex" href="#">
+            <img src="imgs/logo@2x.png" class="w-20" alt=""> 
+            <div class="px-2">
+                <p>Weather</p>
+                <p class="fs-6 one">tagline goes here</p>
+            </div>
+            
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            
+            
+            </ul>
+           
+          </div>
+        </div>
+    </nav>
+    <section id="header" class="position-relative  ">
+        <div class="two">
+
+        </div>
+        <div class="layer  d-flex justify-content-center align-items-center">
+         <div class="container">
+            <div class=" my-5 position-relative d-flex" >
+                <input type="search" id="searchInput" class="form-control" placeholder="find your location">
+                <button class=" position-absolute button" id="btnFind">Find</button>
+            </div>
+            <p class="alert alert-dark w-25 mx-auto d-none" id="alertError">Error data</p>
+            <div class="row g-0 bg-red" id="rowData">
+               
+               
+            </div>
+         </div>
+        </div>
+        <div class="loading d-non" id="loadind">
+          <span class="loader"></span>
+        </div>
+    </section>
+<!-- bootstrap js -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <script src="js/index.js"></script>
+</body>
+</html>
